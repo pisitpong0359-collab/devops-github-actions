@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="th">
 
@@ -9,42 +10,96 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f6f9;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
             margin: 0;
+            color: #333;
         }
 
         .container {
             max-width: 850px;
             margin: auto;
-            padding: 30px;
+            padding: 40px 30px;
         }
 
         .card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
         }
 
         h1 {
             text-align: center;
-            color: #24292e;
+            color: #4f46e5;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #312e81;
+            border-left: 5px solid #6366f1;
+            padding-left: 10px;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        ul {
+            line-height: 2;
+        }
+
+        li::marker {
+            color: #6366f1;
         }
 
         .status {
-            color: green;
+            color: #16a34a;
             font-weight: bold;
+            background: #dcfce7;
+            padding: 12px;
+            border-radius: 8px;
+            display: inline-block;
         }
 
         .btn {
             display: inline-block;
-            background: #24292e;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
             color: white;
-            padding: 10px 18px;
+            padding: 12px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            transform: scale(1.05);
+        }
+
+        .developer {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #312e81;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+        }
+
+        .emoji {
+            font-size: 45px;
+            text-align: center;
         }
     </style>
 
@@ -55,26 +110,33 @@
     <div class="container">
 
         <div class="card">
-            <h1>🚀 DevOps with GitHub Actions</h1>
 
-            <p align="center">
+            <div class="emoji">🚀</div>
+
+            <h1>DevOps with GitHub Actions</h1>
+
+            <p class="subtitle">
                 โครงการศึกษา Continuous Integration (CI)
                 และ Continuous Deployment (CD)
             </p>
+
         </div>
 
         <div class="card">
-            <h2>Project Overview</h2>
+
+            <h2>📌 Project Overview</h2>
 
             <p>
                 เว็บไซต์นี้จัดทำขึ้นเพื่อศึกษาแนวคิด DevOps
                 และการทำงานของ GitHub Actions สำหรับการ Build
                 และ Deploy เว็บไซต์แบบอัตโนมัติ
             </p>
+
         </div>
 
         <div class="card">
-            <h2>Technologies Used</h2>
+
+            <h2>💻 Technologies Used</h2>
 
             <ul>
                 <li>GitHub</li>
@@ -82,31 +144,43 @@
                 <li>GitHub Pages</li>
                 <li>HTML & CSS</li>
             </ul>
+
         </div>
 
         <div class="card">
-            <h2>Deployment Status</h2>
+
+            <h2>⚡ Deployment Status</h2>
 
             <p class="status">
                 ✅ Build & Deployment Successful
             </p>
+
         </div>
 
         <div class="card">
-            <h2>Repository</h2>
+
+            <h2>🔗 Repository</h2>
 
             <a href="https://github.com/pisitpong0359-collab/devops-github-actions"
                class="btn"
                target="_blank">
                 View GitHub Repository
             </a>
+
         </div>
 
         <div class="card">
-            <h2>Developer</h2>
 
-            <p>นาย พิศิษฐ์พงศ์ มโนปัญญา 66541207107-8</p>
-            <p>นาย กษิด์เดช สายเมือง 66541207049-2</p>
+            <h2>👨‍💻 Developer</h2>
+
+            <p class="developer">
+                นาย พิศิษฐ์พงศ์ มโนปัญญา
+            </p>
+
+            <p class="developer">
+                นาย กษิเดช สายเมืองง
+            </p>
+
         </div>
 
     </div>
@@ -114,3 +188,4 @@
 </body>
 
 </html>
+```
