@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: action/checckout@v4
+      - uses: actions/checckout@v4
 
       - name: Build Project
         run: echo "Build Successful"
