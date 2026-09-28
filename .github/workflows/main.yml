@@ -1,0 +1,23 @@
+name: DevOps CI/CD Demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Build Project
+        run: echo "Build Successful"
+
+      - name: Test Project
+        run: echo "Test Successful"
+
+      - name: Deploy Project
+        run: echo "Deploy Successful"
